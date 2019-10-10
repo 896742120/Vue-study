@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lilb/vue.js"></script>
+</head>
+
+<body>
+    <div id='app'>
+        <p v-for="item in list ">
+            <input type="text">
+            {{item.name}}
+        </p>
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            list: [
+                { id: 1, name: '李斯' },
+                { id: 2, name: '嬴政' },
+                { id: 3, name: '赵高' },
+                { id: 4, name: '韩非' },
+                { id: 5, name: '荀子' },
+            ]
+        },
+        methods: {
+
+        }
+    });
+</script>
+
+</html>

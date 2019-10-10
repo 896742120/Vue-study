@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lilb/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- v-bind 只能实现数据的单向绑定 从M自动绑定到V,无法实现数据双向绑定 -->
+        <h4>{{msg}}</h4>
+        <input type="text" v-model="msg" width="100%">
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            msg: '123'
+        },
+        methods: {
+
+        }
+    });
+</script>
+
+</html>
